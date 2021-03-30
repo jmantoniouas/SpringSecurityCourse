@@ -1,5 +1,9 @@
 package com.example.demo.security;
 
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+import java.util.Set;
+
 public enum ApplicationUserPermission {
     STUDENT_READ("student_read"),
     STUDENT_WRITE("student_write"),
@@ -15,4 +19,5 @@ public enum ApplicationUserPermission {
     public String getPermission() {
         return permission;
     }
+
 }
